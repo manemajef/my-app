@@ -5,8 +5,12 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { SidebarTrigger } from "../ui/sidebar";
 import { Separator } from "../ui/separator";
+import Component from "../comp-577";
 
 export default function TopNav({ trigger }: { trigger: React.ReactNode }) {
+  if (true) {
+    return <Component trigger={trigger} />;
+  }
   return (
     <div className="sticky top-0 bg-background border-b z-50">
       <div className="mx-auto flex max-w-7xl justify-between pt-2 pb-1 px-4 items-center">
@@ -22,9 +26,9 @@ export default function TopNav({ trigger }: { trigger: React.ReactNode }) {
         {/* </div> */}
         <div className="flex gap-2">
           <Button asChild size="icon" variant="ghost">
-            <Link href="/">
+            {/* <Link href="/">
               <Home />
-            </Link>
+            </Link> */}
           </Button>
           <ThemeToggle />
         </div>
