@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
+import FolderList from "@/components/folder-list";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 export default function Page() {
   return (
     <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
@@ -19,6 +20,16 @@ export default function Page() {
           <Button asChild size="lg" variant="outline">
             <Link href="https://motion.dev/docs/react">Docomontaions</Link>
           </Button>
+        </div>
+        <div className="mx-auto mt-12 ">
+          <Card className="max-w-xs mx-auto">
+            <CardHeader>
+              <CardTitle>Links</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <FolderList />
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

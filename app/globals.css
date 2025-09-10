@@ -82,14 +82,14 @@
 .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
+  --card: oklch(31.473% 0.04562 243.874 / 0.434);
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
   --primary: oklch(70.409% 0.13041 229.141);
   --primary-foreground: oklch(0.208 0.042 265.755);
   --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --secondary-foreground: oklch(83.286% 0.09233 324.508);
   --muted: oklch(0.279 0.041 260.031);
   --muted-foreground: oklch(0.704 0.04 256.788);
   --accent: oklch(0.279 0.041 260.031);
@@ -132,7 +132,10 @@
     @apply mx-auto  max-w-7xl px-4 sm:px-6 lg:px-6 pt-2 pb-16;
   }
   .title {
-    @apply text-6xl mt-2 mb-8;
+    @apply text-6xl mt-2 mb-8 tracking-tighter;
+  }
+  .section {
+    @apply mx-auto max-w-6xl px-6 my-12 xl:px-4;
   }
 
   .prose :where(li > ul) {

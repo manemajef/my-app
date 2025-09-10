@@ -17,7 +17,7 @@ export default function FolderList() {
   const routes = useRelativeRoutes();
   if (routes.length <= 0) return;
   return (
-    <div className="py-12 mx-auto max-w-2xl">
+    <div className="mx-auto max-w-2xl">
       <ul>
         {routes.map((r, i) => (
           <li key={i}>
