@@ -14,10 +14,10 @@ export default function Page() {
         </p>
         <div className="mt-10 flex justify-center items-center gap-4">
           <Button asChild size="lg">
-            <Link href="#">Get Started</Link>
+            <Link href="/framer-motion/get-started">Get Started</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href="#">Docomontaions</Link>
+            <Link href="https://motion.dev/docs/react">Docomontaions</Link>
           </Button>
         </div>
       </div>
